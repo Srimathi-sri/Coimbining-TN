@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Energy Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 Hospital Energy Priority Bot</h1>
+            <div id="clock"></div>
+        </header>
+
+        <div class="controls">
+            <button onclick="simulateFailure()" class="btn btn-red">SIMULATE FAILURE</button>
+            <button onclick="restorePower()" class="btn btn-green">RESTORE GRID</button>
+            <button onclick="resetSystem()" class="btn btn-blue">RESET SYSTEM</button>
+            <button onclick="downloadReport()" class="btn btn-dark">DOWNLOAD LOGS</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="card dark"><h4>Source</h4><h2 id="source-val">GRID</h2></div>
+            <div class="card" id="batt-card"><h4>Battery</h4><h2 id="battery-val">100%</h2></div>
+            <div class="card info"><h4>Voltage</h4><h2 id="voltage-val">230V</h2></div>
+        </div>
+
+        <div class="graph-container">
+            <canvas id="energyChart"></canvas>
+        </div>
+
+        <div class="system-status">
+            <div class="device p1"><span>Ventilator (P1)</span> <span class="badge online">ONLINE</span></div>
+            <div class="device p1"><span>Heart Tracker (P1)</span> <span class="badge online">ONLINE</span></div>
+            <div id="dev-light" class="device p2"><span>Lighting (P2)</span> <span id="lbl-light" class="badge online">ONLINE</span></div>
+            <div id="dev-hvac" class="device p3"><span>HVAC (P3)</span> <span id="lbl-hvac" class="badge online">ONLINE</span></div>
+        </div>
+
+        <div class="log-container" id="logs"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

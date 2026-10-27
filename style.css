@@ -1,0 +1,118 @@
+body {
+    font-family: sans-serif;
+    background-color: #f1f2f6;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons section */
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Button colors */
+.btn-red {
+    background-color: #ff4757;
+}
+
+.btn-green {
+    background-color: #2ed573;
+}
+
+.btn-blue {
+    background-color: #1e90ff;
+}
+
+.btn-dark {
+    background-color: #2f3542;
+}
+
+/* Cards */
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.dark {
+    background-color: #2f3542;
+}
+
+.info {
+    background-color: #1e90ff;
+}
+
+/* Graph box */
+.graph-container {
+    height: 250px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+/* Device list */
+.device {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Status badges */
+.badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.online {
+    background-color: #dff9fb;
+    color: #2ed573;
+}
+
+.offline {
+    background-color: #fab1a0;
+    color: #ff4757;
+}
+
+/* Log section */
+.log-container {
+    margin-top: 20px;
+    background-color: #2f3542;
+    color: #7bed9f;
+    padding: 15px;
+    height: 120px;
+    overflow-y: auto;
+    font-family: monospace;
+    border-radius: 5px;
+}

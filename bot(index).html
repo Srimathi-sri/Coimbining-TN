@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Energy Bot v3.0</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f4f8; margin: 20px; }
+        .header { display: flex; align-items: center; gap: 15px; margin-bottom: 30px; }
+        .container { display: flex; gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .chart-container { flex: 2; }
+        .report-container { flex: 1; }
+        .btn { background: #3498db; color: white; border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; }
+        .btn:hover { background: #2980b9; }
+        .stat-value { font-size: 1.5rem; font-weight: bold; color: #2c3e50; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <span style="font-size: 2rem;">🏥</span>
+        <h1>Life-Critical Analysis Bot</h1>
+    </div>
+
+    <div class="container">
+        <div class="card chart-container">
+            <canvas id="voltageChart"></canvas>
+        </div>
+
+        <div class="card report-container">
+            <h2>Bot Intelligence Report</h2>
+            <p>Total Energy Consumed: <span id="energy-val" class="stat-value">0</span> Wh</p>
+            <p>Avg Voltage Measure: <span id="voltage-val" class="stat-value">0</span> V</p>
+            <p>Energy Saved by Shedding: <span id="saved-val" class="stat-value">0</span> Wh</p>
+            <button class="btn" onclick="runAnalysis()">RUN DATASET ANALYSIS</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
